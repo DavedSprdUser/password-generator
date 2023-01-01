@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Karla:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1 class="title">
+        Generate a <span class="title-green">random passwords</span>
+      </h1>
+      <p class="sub-title">Never use an insecure password again.</p>
+      <div class="password">
+        <button class="pass-gen" onclick="generateRandom()">
+          Generate passwords
+        </button>
+        <div class="divider">
+          <button id="pass-one" class="pass-copy"></button>
+          <button id="pass-two" class="pass-copy pass-copy-left"></button>
+        </div>
+      </div>
+    </main>
+    <div class="popup" id="copy-popup">Password copied to clipboard</div>
+    <script src="index.js"></script>
+  </body>
+</html>
